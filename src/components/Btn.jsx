@@ -15,6 +15,7 @@ const Button = styled.button`
 function Btn( props ){
 
     const {name, onClick } = props;
+    
     return (
         <Wraper>
             <Button onClick={onClick} type="button">{name}</Button>

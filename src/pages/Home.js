@@ -2,6 +2,7 @@ import Table from '../container/Table';
 import Btn from '../components/Btn';
 import Write from '../components/Write';
 import Pager from '../components/Pager';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
       <section>
         <h1>공지사항</h1>
         <Table />
-        <Btn name="목록보기" />
+        <Link to="/board"><Btn name="목록보기" /></Link>
         <Write />     
         <Pager />
       </section>      
